@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Traducao Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Traducao
+  m_TableCollectionNameGuidString: fbc2564fb7410f146a5a0acb5b8a9f8c
+  m_Entries:
+  - m_Id: 180578557952
+    m_Key: TitleGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392671928320
+    m_Key: ButtonStart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 468404281344
+    m_Key: ButtonOptions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 546489638912
+    m_Key: ButtonQuit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1259718451200
+    m_Key: TitleOptions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1576170299392
+    m_Key: ButtonEnglish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1684790190080
+    m_Key: ButtonPortugues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2073287598080
+    m_Key: TitleLoja
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2934832076556861464
+  references:
+    version: 2
+    RefIds:
+    - rid: 2934832076556861464
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1741641406828

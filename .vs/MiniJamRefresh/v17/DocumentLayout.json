@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\unity\\Projetos\\MiniJamRefresh\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|d:\\unity\\projetos\\minijamrefresh\\assets\\script\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|d:\\unity\\projetos\\minijamrefresh\\assets\\script\\introduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\introduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\introduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,10 +28,9 @@
               "RelativeDocumentMoniker": "Assets\\Script\\Introduction.cs",
               "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Introduction.cs",
               "RelativeToolTip": "Assets\\Script\\Introduction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:25:25.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T15:25:25.746Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\UiManager.cs",
               "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\UiManager.cs",
               "RelativeToolTip": "Assets\\Script\\UiManager.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwD0AAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAwJYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T15:56:04.341Z",
               "EditorCaption": ""

@@ -14,4 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FaseIntrodutoria.unity
     guid: 4e8413af94761284ba9e418671216f79
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 52f13780a08aa594fa6223b8e4f1996f, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: cd489011c4579bc4faf5c011e7fcd1e9, type: 2}

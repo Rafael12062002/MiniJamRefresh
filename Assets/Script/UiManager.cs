@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.Localization.Settings;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,12 +19,15 @@ public class UiManager : MonoBehaviour
     public Button options;
     public Button fecharPanelOptions;
     public Button fecharPanelLoja;
+    public Button ingles;
+    public Button portugues;
 
     //panels Menu
     public GameObject panelConfig;
     public GameObject panelOptions;
     public GameObject panelLoja;
 
+    private bool isChanging = false;
     private void Awake()
     {
         if(instance == null)
@@ -59,8 +63,10 @@ public class UiManager : MonoBehaviour
         {
             // Menu
             config = GameObject.Find("Config").GetComponent<Button>();
-            outrosJogos = GameObject.Find("OutrosJogos").GetComponent<Button>();
+            loja = GameObject.Find("Loja").GetComponent<Button>();
             som = GameObject.Find("Som").GetComponent<Button>();
+            fecharPanelLoja = GameObject.Find("FecharPanelLoja").GetComponent<Button>();
+            outrosJogos = GameObject.Find("OutrosJogos").GetComponent<Button>();
             startGame = GameObject.Find("StartGame").GetComponent<Button>();
             quitGame = GameObject.Find("QuitGame").GetComponent<Button>();
             options = GameObject.Find("Options").GetComponent<Button>();
@@ -68,13 +74,13 @@ public class UiManager : MonoBehaviour
             panelConfig = GameObject.FindWithTag("Config");
             panelOptions = GameObject.FindWithTag("PanelOptions");
             panelLoja = GameObject.FindWithTag("PanelLoja");
-            fecharPanelLoja = config.GetComponentInChildren<Button>(true);
-            loja = config.GetComponentInChildren<Button>(true);
+            ingles = GameObject.Find("Ingles").GetComponent<Button>();
+            portugues = GameObject.Find("Portugues").GetComponent<Button>();
 
             //PanelConfig começa desativado
-            panelConfig.SetActive(false);
             panelOptions.SetActive(false);
             panelLoja.SetActive(false);
+            panelConfig.SetActive(false);
 
             //Buttons Menu
             config.onClick.AddListener(AbrirPanelConfig);
@@ -84,6 +90,8 @@ public class UiManager : MonoBehaviour
             loja.onClick.AddListener(AbrirPanelLoja);
             fecharPanelOptions.onClick.AddListener(FecharPanelOptions);
             fecharPanelLoja.onClick.AddListener(FecharPanelLoja);
+            outrosJogos.onClick.AddListener(ButtonOutrosJogos);
+            som.onClick.AddListener(RemoverSom);
         }
     }
 
@@ -126,5 +134,45 @@ public class UiManager : MonoBehaviour
     void BackToMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    void ButtonOutrosJogos()
+    {
+
+    }
+
+    void RemoverSom()
+    {
+
+    }
+
+    public void ChangeToEnglish()
+    {
+        StartCoroutine(SetLanguage("en-US"));
+    }
+
+    public void ChangeToPortuguese()
+    {
+        StartCoroutine(SetLanguage("pt-BR"));
+    }
+
+    private IEnumerator SetLanguage(string localeCode)
+    {
+        if (isChanging) yield break; // Evita múltiplas chamadas simultâneas
+        isChanging = true;
+
+        yield return LocalizationSettings.InitializationOperation;
+
+        var locale = LocalizationSettings.AvailableLocales.Locales.Find(l => l.Identifier.Code == localeCode);
+        if (locale != null)
+        {
+            LocalizationSettings.SelectedLocale = locale;
+        }
+        else
+        {
+            Debug.LogError("Idioma não encontrado: " + localeCode);
+        }
+
+        isChanging = false;
     }
 }
