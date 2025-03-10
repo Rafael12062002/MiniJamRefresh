@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -23,8 +24,6 @@ public class UiManager : MonoBehaviour
     public GameObject panelOptions;
     public GameObject panelLoja;
 
-    //Intro
-    public Button voltarMenu;
     private void Awake()
     {
         if(instance == null)
@@ -62,15 +61,15 @@ public class UiManager : MonoBehaviour
             config = GameObject.Find("Config").GetComponent<Button>();
             outrosJogos = GameObject.Find("OutrosJogos").GetComponent<Button>();
             som = GameObject.Find("Som").GetComponent<Button>();
-            //loja = GameObject.Find().
             startGame = GameObject.Find("StartGame").GetComponent<Button>();
             quitGame = GameObject.Find("QuitGame").GetComponent<Button>();
             options = GameObject.Find("Options").GetComponent<Button>();
             fecharPanelOptions = GameObject.Find("FecharPanel").GetComponent<Button>();
-            fecharPanelLoja = GameObject.Find("FecharPanelLoja").GetComponent<Button>();
             panelConfig = GameObject.FindWithTag("Config");
             panelOptions = GameObject.FindWithTag("PanelOptions");
             panelLoja = GameObject.FindWithTag("PanelLoja");
+            fecharPanelLoja = config.GetComponentInChildren<Button>(true);
+            loja = config.GetComponentInChildren<Button>(true);
 
             //PanelConfig começa desativado
             panelConfig.SetActive(false);
@@ -85,12 +84,6 @@ public class UiManager : MonoBehaviour
             loja.onClick.AddListener(AbrirPanelLoja);
             fecharPanelOptions.onClick.AddListener(FecharPanelOptions);
             fecharPanelLoja.onClick.AddListener(FecharPanelLoja);
-        }
-        if(sceneName == "Intro")
-        {
-            voltarMenu = GameObject.Find("VoltarMenu").GetComponent<Button>();
-            //Buttons Intro
-            voltarMenu.onClick.AddListener(BackToMenu);
         }
     }
 

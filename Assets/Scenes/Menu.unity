@@ -1768,15 +1768,16 @@ MonoBehaviour:
   config: {fileID: 0}
   outrosJogos: {fileID: 0}
   som: {fileID: 0}
-  loja: {fileID: 1888248412}
+  loja: {fileID: 0}
   startGame: {fileID: 0}
   quitGame: {fileID: 0}
   options: {fileID: 0}
   fecharPanelOptions: {fileID: 0}
-  fecharPanelLoja: {fileID: 798831515}
+  fecharPanelLoja: {fileID: 0}
   panelConfig: {fileID: 0}
   panelOptions: {fileID: 0}
   panelLoja: {fileID: 0}
+  voltarMenu: {fileID: 0}
 --- !u!1 &884840269
 GameObject:
   m_ObjectHideFlags: 0
