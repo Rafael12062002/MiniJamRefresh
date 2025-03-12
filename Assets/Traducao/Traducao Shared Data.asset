@@ -47,6 +47,26 @@ MonoBehaviour:
     m_Key: TitleLoja
     m_Metadata:
       m_Items: []
+  - m_Id: 71975834886144
+    m_Key: Intro_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72136355094528
+    m_Key: Intro_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72264231034880
+    m_Key: Intro_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72393856000000
+    m_Key: Intro_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72509992083456
+    m_Key: Intro_4
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

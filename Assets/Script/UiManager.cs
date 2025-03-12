@@ -27,6 +27,8 @@ public class UiManager : MonoBehaviour
     public GameObject panelOptions;
     public GameObject panelLoja;
 
+    //Url Do portifolio
+    public string url = "https://paulo-rafael-c-r.itch.io/";
     private bool isChanging = false;
     private void Awake()
     {
@@ -138,7 +140,7 @@ public class UiManager : MonoBehaviour
 
     void ButtonOutrosJogos()
     {
-
+        Application.OpenURL(url);
     }
 
     void RemoverSom()

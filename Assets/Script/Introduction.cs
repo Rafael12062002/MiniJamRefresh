@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Introduction : MonoBehaviour
 {
-    string[] textos = new string[5];
+    private LocalizedString[] textos;
     public TextMeshProUGUI texto;
     int cont = 0;
     public Button nextText;
@@ -15,11 +16,13 @@ public class Introduction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textos[0] = "O mundo e os seres humanos conseguiram viver em uma utopia cibernetica colocando sua consciencia em chips controlada por uma matriz na qual é super protegida por maquinas...";
-        textos[1] = "...Mas toda a humanidade corre risco por uma falha desconhecida na matriz, agora todas as consciencias e o mundo cibernetico podem desaparecer...";
-        textos[2] = "...Todos que tentaram chegar perto da matriz para concertar falharam miseravelmente, pois as maquinas foram programadas para proteger a matriz mão importa o motivo...";
-        textos[3] = "...Pórem você que foi um dos cientistas a fazer a descoberta e implementar a utopia no mundo tem um plano, mas não será facil passar das maquinas...";
-        textos[4] = "Não tive tempo de gerar as imagens para a historia, desculpe :)";
+        textos = new LocalizedString[5];
+
+        textos[0] = new LocalizedString("Traducao", "Intro_0");
+        textos[1] = new LocalizedString("Traducao", "Intro_1");
+        textos[2] = new LocalizedString("Traducao", "Intro_2");
+        textos[3] = new LocalizedString("Traducao", "Intro_3");
+        textos[4] = new LocalizedString("Traducao", "Intro_4");
 
         nextText.onClick.AddListener(NextText);
         texto.text = "";
@@ -27,18 +30,23 @@ public class Introduction : MonoBehaviour
         StartCoroutine(Rotina());
     }
 
-   public IEnumerator Rotina()
-   {
+    public IEnumerator Rotina()
+    {
         texto.text = "";
+        // Busca o texto localizado antes de exibir
+        var operation = textos[cont].GetLocalizedStringAsync();
+        yield return operation;
 
-        foreach(char letter in textos[cont].ToCharArray())
+        string textBuscado = operation.Result;
+
+        foreach (char letter in textBuscado.ToCharArray())
         {
             texto.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
 
         nextText.gameObject.SetActive(true);
-   }
+    }
 
     public void NextText()
     {

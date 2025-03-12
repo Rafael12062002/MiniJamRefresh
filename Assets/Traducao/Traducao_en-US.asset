@@ -50,6 +50,34 @@ MonoBehaviour:
     m_Localized: In development
     m_Metadata:
       m_Items: []
+  - m_Id: 71975834886144
+    m_Localized: It all happened so suddenly, we lived in a cybernetic utopia...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72136355094528
+    m_Localized: "...in which our minds connected to a chip were maintained by a
+      super powerful matrix developed by us...\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72264231034880
+    m_Localized: "...but everything went wrong in a blackout, we were all disconnected
+      by a mistake and now all our consciousnesses could disappear forever, causing
+      human extinction...\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72393856000000
+    m_Localized: "...everyone is unconscious, but for some reason only I regained
+      consciousness, but outside the chip, now I'm back to reality and I need to
+      find out what happened and resolve things...\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72509992083456
+    m_Localized: ...but going through the machines whose only programming is to protect
+      the matrix at all costs will not be easy, but as one of the scientists to discover
+      and implement this utopia in the world, it is my obligation to save everyone
+      who is about to have their consciousness erased from existence...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

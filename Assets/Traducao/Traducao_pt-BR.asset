@@ -50,6 +50,34 @@ MonoBehaviour:
     m_Localized: Em desenvolvimento
     m_Metadata:
       m_Items: []
+  - m_Id: 71975834886144
+    m_Localized: "Tudo aconteceu t\xE3o de repente, viviamos em uma utopia cibernetica..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72136355094528
+    m_Localized: "...na qual nossas mentes conectadas a um chip era mantida por uma
+      matriz super poderosa desenvolvida por n\xF3s..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72264231034880
+    m_Localized: "...mas tudo deu errado em um apag\xE3o, todos fomos desconectados
+      por um erro e agora todas as nossas consciencias podem desaparecer pra sempre,
+      causando a extin\xE7\xE3o humana..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72393856000000
+    m_Localized: "...todos est\xE3o desacordados, mas por algum motivo somente eu
+      recuperei a consciencia, mas fora do chip, agora estou de volta a realidade
+      e preciso descobrir o que aconteceu e resolver as coisas..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72509992083456
+    m_Localized: "...mas passar pelas maquinas na qual a unica programa\xE7\xE3o
+      \xE9 proteger a matriz a todo custo n\xE3o vai ser nada facil, mas como um
+      dos cientistas a descobrir e implementar essa utopia no mundo \xE9 minha obriga\xE7\xE3o
+      salvar a todos que est\xE3o prestes a ter sua consciencia apagada da existencia..."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
