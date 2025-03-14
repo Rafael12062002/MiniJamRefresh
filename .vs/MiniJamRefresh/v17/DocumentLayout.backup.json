@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "D:\\unity\\Projetos\\MiniJamRefresh\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|d:\\unity\\projetos\\minijamrefresh\\assets\\script\\audiolistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\audiolistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|d:\\unity\\projetos\\minijamrefresh\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|d:\\unity\\projetos\\minijamrefresh\\assets\\script\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|d:\\unity\\projetos\\minijamrefresh\\assets\\script\\moveplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\moveplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\fasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\objectinteractive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\objectinteractive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\introduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\introduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\plataforma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\plataforma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\segueplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\segueplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,12 +47,12 @@
       "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\audiolistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\audiolistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\script\\moveplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\moveplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|D:\\unity\\Projetos\\MiniJamRefresh\\assets\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2D2EE8BE-97F9-7F27-CCDC-7B2055A8E176}|Assembly-CSharp.csproj|solutionrelative:assets\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,19 +67,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameManager.cs",
+              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Script\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T19:54:58.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FaseController.cs",
+              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\FaseController.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FaseController.cs",
+              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\FaseController.cs",
+              "RelativeToolTip": "Assets\\Script\\FaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T19:05:51.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ObjectInteractive.cs",
+              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\ObjectInteractive.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ObjectInteractive.cs",
+              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\ObjectInteractive.cs",
+              "RelativeToolTip": "Assets\\Script\\ObjectInteractive.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T14:27:26.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dialogue.cs",
+              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Dialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Dialogue.cs",
+              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Dialogue.cs",
+              "RelativeToolTip": "Assets\\Script\\Dialogue.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T14:44:13.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Introduction.cs",
+              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Introduction.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Introduction.cs",
+              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Introduction.cs",
+              "RelativeToolTip": "Assets\\Script\\Introduction.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:25:25.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Plataforma.cs",
+              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Plataforma.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Plataforma.cs",
+              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Plataforma.cs",
+              "RelativeToolTip": "Assets\\Script\\Plataforma.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T04:40:02.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SeguePlayer.cs",
+              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\SeguePlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SeguePlayer.cs",
+              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\SeguePlayer.cs",
+              "RelativeToolTip": "Assets\\Script\\SeguePlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T02:56:14.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AudioListener.cs",
               "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\AudioListener.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\AudioListener.cs",
               "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\AudioListener.cs",
               "RelativeToolTip": "Assets\\Script\\AudioListener.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T02:57:28.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T02:57:28.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Readme.txt",
               "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Readme.txt",
               "RelativeDocumentMoniker": "Assets\\Readme.txt",
@@ -67,64 +175,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Player.cs",
               "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Player.cs",
               "RelativeToolTip": "Assets\\Script\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T02:23:29.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Entity.cs",
               "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Entity.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Entity.cs",
               "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Entity.cs",
               "RelativeToolTip": "Assets\\Script\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T02:21:11.34Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "MovePlayer.cs",
               "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\MovePlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\MovePlayer.cs",
               "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\MovePlayer.cs",
               "RelativeToolTip": "Assets\\Script\\MovePlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T02:19:44.479Z"
+              "WhenOpened": "2025-03-11T02:19:44.479Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Introduction.cs",
-              "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Introduction.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Introduction.cs",
-              "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\Introduction.cs",
-              "RelativeToolTip": "Assets\\Script\\Introduction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:25:25.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "UiManager.cs",
               "DocumentMoniker": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\UiManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UiManager.cs",
               "ToolTip": "D:\\unity\\Projetos\\MiniJamRefresh\\Assets\\Script\\UiManager.cs",
               "RelativeToolTip": "Assets\\Script\\UiManager.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAI4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAA+wLQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T15:56:04.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T15:56:04.341Z"
             }
           ]
         }

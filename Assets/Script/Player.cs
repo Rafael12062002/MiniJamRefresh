@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Classe que pode separar atributos mais importantes e herda o entity
 public class Player : MonoBehaviour
 {
     public Entity entity;

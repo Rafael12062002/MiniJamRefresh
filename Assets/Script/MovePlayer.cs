@@ -13,31 +13,76 @@ public class MovePlayer : MonoBehaviour
     public bool isWalking = false;
     public float jumpForce = 10f;
     public bool isJump = false;
-
+    public bool isRunning = false;
+    private Animator animator;
     Rigidbody2D rb;
-    Vector2 movement = Vector2.zero;
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = GetComponent<Player>();
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    //Aqui usamos o velocity para fazer a movimentação do personagem usando o axes horizontal
+    //Here we use velocity to move the character using the horizontal axis
     void Update()
     {
-        float movimento = Input.GetAxis("Horizontal");
-        //input_y = input_y.GetAxisRaw("Vertical"); se eu quiser fazer no modelo top-down
-        rb.velocity = new Vector2(movimento * speed, rb.velocity.y);
+        Move();
         Jump();
     }
 
+    void Move()
+    {
+        float movimento = Input.GetAxis("Horizontal");
+        //input_y = input_y.GetAxisRaw("Vertical"); se eu quiser fazer no modelo top-down
+        //input_y = input_y.GetAxisRaw("Vertical"); if I want to do it in the top-down model
+        rb.velocity = new Vector2(movimento * speed, rb.velocity.y);
+
+        if(Input.GetAxis("Horizontal") > 0f)
+        {
+            animator.SetBool("isRunning", true);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            animator.SetBool("isRunning", true);
+        }
+        if (Input.GetAxis("Horizontal") < 0f)
+        {
+            animator.SetBool("isRunning", true);
+            transform.eulerAngles = new Vector3 (0f, 180f, 0f);
+            animator.SetBool("isRunning", true);
+        }
+        if (Input.GetAxis("Horizontal") ==  0)
+        {
+            animator.SetBool("isRunning", false);
+        }
+
+    }
+
+    //Metodo de pulo
+    //Jump method
     void Jump()
     {
-        if(Input.GetButtonDown("Jump") && isJump == false)
+        if (Input.GetButtonDown("Jump") && isJump == false)
         {
-            Debug.Log("Pulando...");
+            //Jumping...
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            animator.SetBool("isJuping", true);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Chao") || collision.gameObject.CompareTag("Plataforma"))
+        {
+            isJump = false;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Chao") || collision.gameObject.CompareTag("Plataforma"))
+        {
+            isJump = true;
         }
     }
 }

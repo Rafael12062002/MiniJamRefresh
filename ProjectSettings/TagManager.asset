@@ -7,6 +7,11 @@ TagManager:
   - Config
   - PanelOptions
   - PanelLoja
+  - segue
+  - Chao
+  - Plataforma
+  - ObjectInteractive
+  - FaseController
   layers:
   - Default
   - TransparentFX

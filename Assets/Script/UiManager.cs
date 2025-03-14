@@ -5,6 +5,7 @@ using UnityEngine.Localization.Settings;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static Unity.Burst.Intrinsics.X86;
 
 public class UiManager : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class UiManager : MonoBehaviour
     private bool isChanging = false;
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -56,12 +57,12 @@ public class UiManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void AtualizarUI(string sceneName)
     {
-        if(sceneName == "Menu")
+        if (sceneName == "Menu")
         {
             // Menu
             config = GameObject.Find("Config").GetComponent<Button>();
