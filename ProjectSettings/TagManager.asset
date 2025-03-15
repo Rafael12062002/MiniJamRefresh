@@ -12,6 +12,8 @@ TagManager:
   - Plataforma
   - ObjectInteractive
   - FaseController
+  - Bala
+  - Arma
   layers:
   - Default
   - TransparentFX

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Plataforma : MonoBehaviour
 {
-    private Vector3 posicaoSalva;
-
+    public Animator animator;
     private void Start()
     {
-        posicaoSalva = transform.position; posicaoSalva = transform.position;
+        float offSetAleatorio = Random.Range(0f, 1f);
+
+        animator.Play("PlataformMove", 0, offSetAleatorio);
     }
 }

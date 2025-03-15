@@ -17,6 +17,8 @@ public class MovePlayer : MonoBehaviour
     private Animator animator;
     Rigidbody2D rb;
 
+    private Transform plataforma;
+    private Vector3 ultimaPosicaoPlataforma;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +34,16 @@ public class MovePlayer : MonoBehaviour
         Jump();
     }
 
+    private void FixedUpdate()
+    {
+        if(plataforma != null)
+        {
+            Vector3 deslocamento = plataforma.position - ultimaPosicaoPlataforma;
+            transform.position += deslocamento;
+            ultimaPosicaoPlataforma = plataforma.position;
+        }
+    }
+
     void Move()
     {
         float movimento = Input.GetAxis("Horizontal");
@@ -43,12 +55,16 @@ public class MovePlayer : MonoBehaviour
         {
             animator.SetBool("isRunning", true);
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            player.arma.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            player.forcaTiro = Mathf.Abs(player.forcaTiro);
             animator.SetBool("isRunning", true);
         }
         if (Input.GetAxis("Horizontal") < 0f)
         {
             animator.SetBool("isRunning", true);
             transform.eulerAngles = new Vector3 (0f, 180f, 0f);
+            player.arma.transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            player.forcaTiro = -Mathf.Abs(player.forcaTiro);
             animator.SetBool("isRunning", true);
         }
         if (Input.GetAxis("Horizontal") ==  0)
@@ -66,7 +82,7 @@ public class MovePlayer : MonoBehaviour
         {
             //Jumping...
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            animator.SetBool("isJuping", true);
+            animator.SetBool("isJumping", true);
         }
     }
 
@@ -75,6 +91,9 @@ public class MovePlayer : MonoBehaviour
         if(collision.gameObject.CompareTag("Chao") || collision.gameObject.CompareTag("Plataforma"))
         {
             isJump = false;
+            animator.SetBool("isJumping", false);
+            plataforma = collision.transform;
+            ultimaPosicaoPlataforma = plataforma.position;
         }
     }
 
