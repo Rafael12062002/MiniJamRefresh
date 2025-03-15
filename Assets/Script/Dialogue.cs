@@ -11,14 +11,22 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI dialogue;
     public Button buttonNextDialogue;
     public int cont = 0;
-    public float speedTiping = 0.05f; 
+    public float speedTiping = 0.05f;
+
+    Enemy enemy;
 
     string[] dialogues = new string[3];
+    public string dialogue1;
+    public string dialogue2;
+    public string dialogue3;
     void Start()
     {
-        dialogues[0] = "Acessando localização da matriz...";
-        dialogues[1] = "Topo do predio principal da cidade...";
-        dialogues[2] = "Predio fechado use as plataformas para chegar lá";
+        enemy = GetComponent<Enemy>();
+
+        dialogues[0] = dialogue1;
+        dialogues[1] = dialogue2;
+        dialogues[2] = dialogue3;
+
         buttonNextDialogue.gameObject.SetActive(false);
         buttonNextDialogue.onClick.AddListener(NextDialogue);
         dialogue.text = "";
@@ -51,6 +59,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             dialoguePanel.SetActive(false);
+            enemy.gameObject.SetActive(true);
         }
     }
 }

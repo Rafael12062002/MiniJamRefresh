@@ -22,15 +22,23 @@ public class UiManager : MonoBehaviour
     public Button fecharPanelLoja;
     public Button ingles;
     public Button portugues;
+    public Button fecharTutorial;
+
+
+    public Button backMenu;
+    public Button playAgain;
 
     //panels Menu
+    public GameObject panelGameOver;
     public GameObject panelConfig;
     public GameObject panelOptions;
     public GameObject panelLoja;
+    public GameObject panelTutorial;
 
     //Url Do portifolio
     public string url = "https://paulo-rafael-c-r.itch.io/";
     private bool isChanging = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -78,7 +86,7 @@ public class UiManager : MonoBehaviour
             panelOptions = GameObject.FindWithTag("PanelOptions");
             panelLoja = GameObject.FindWithTag("PanelLoja");
             ingles = GameObject.Find("Ingles").GetComponent<Button>();
-            portugues = GameObject.Find("Portugues").GetComponent<Button>();
+            portugues = GameObject.Find("Portugues").GetComponent<Button>();  
 
             //PanelConfig começa desativado
             panelOptions.SetActive(false);
@@ -94,7 +102,19 @@ public class UiManager : MonoBehaviour
             fecharPanelOptions.onClick.AddListener(FecharPanelOptions);
             fecharPanelLoja.onClick.AddListener(FecharPanelLoja);
             outrosJogos.onClick.AddListener(ButtonOutrosJogos);
-            som.onClick.AddListener(RemoverSom);
+            som.onClick.AddListener(RemoverSom); 
+        }
+        if(sceneName == "FaseIntrodutoria")
+        {
+            panelTutorial = GameObject.FindWithTag("TutorialPanel");
+            fecharTutorial = GameObject.Find("FecharT").GetComponent<Button>();
+            panelGameOver = GameObject.FindGameObjectWithTag("PanelGameOver");
+            backMenu = GameObject.Find("BackToMenu").GetComponent<Button>();
+            playAgain = GameObject.Find("TentarNovamente").GetComponent<Button>();
+            panelGameOver.SetActive(false);
+            fecharTutorial.onClick.AddListener(FecharTutorial);
+            backMenu.onClick.AddListener(BackToMenu);
+            playAgain.onClick.AddListener(PlayAgain);
         }
     }
 
@@ -134,6 +154,12 @@ public class UiManager : MonoBehaviour
         panelLoja.SetActive(false);
     }
 
+    void FecharTutorial()
+    {
+        panelTutorial.gameObject.SetActive(false);
+        Time.timeScale = 1.0f;
+    }
+
     void BackToMenu()
     {
         SceneManager.LoadScene("Menu");
@@ -147,6 +173,11 @@ public class UiManager : MonoBehaviour
     void RemoverSom()
     {
 
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("FaseTorre");
     }
 
     public void ChangeToEnglish()

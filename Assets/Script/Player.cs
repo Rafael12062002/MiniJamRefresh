@@ -44,6 +44,14 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Finish"))
+        {
+            Morte();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Arma"))
@@ -59,5 +67,11 @@ public class Player : MonoBehaviour
         {
             minhaArma = GameObject.FindWithTag("Arma");
         }
+    }
+
+    public void Morte()
+    {
+        Destroy(gameObject);
+        UiManager.instance.panelGameOver.SetActive(true);
     }
 }

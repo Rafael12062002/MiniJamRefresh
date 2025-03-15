@@ -37,11 +37,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+       
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (UiManager.instance.panelTutorial.activeInHierarchy)
+        {
+            Time.timeScale = 0f;
+        }
+
         Debug.Log($"Cena carregada = {scene.name}");
         if(scene.name == "Menu" ||  scene.name == "Intro")
         {
