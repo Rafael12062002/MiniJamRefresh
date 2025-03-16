@@ -78,6 +78,21 @@ MonoBehaviour:
       salvar a todos que est\xE3o prestes a ter sua consciencia apagada da existencia..."
     m_Metadata:
       m_Items: []
+  - m_Id: 2195797493030912
+    m_Localized: "Tome cuidado com as maquinas, voc\xEA s\xF3 tem uma chance\nVoc\xEA
+      pode destrui-las com uma arma ou desativando elas ao pisar em cima delas\nBoa
+      sorte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2197030412886016
+    m_Localized: "Parab\xE9ns por chegar ao final do prot\xF3tipo, tive alguns problemas
+      de implementa\xE7\xE3o, ent\xE3o n\xE3o saiu como eu queria e n\xE3o consegui
+      desenvolver toda a hist\xF3ria do jogo, na verdade era s\xF3 o come\xE7o de
+      uma trama, mas se houver interesse de quem jogou ficarei feliz em continuar
+      o projeto at\xE9 que ele seja finalizado e deixado do jeito que deveria ser,
+      infelizmente o tempo \xE9 curto e estou aprendendo, obrigado.\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

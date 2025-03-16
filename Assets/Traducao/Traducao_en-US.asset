@@ -78,6 +78,27 @@ MonoBehaviour:
       who is about to have their consciousness erased from existence...
     m_Metadata:
       m_Items: []
+  - m_Id: 2195797493030912
+    m_Localized: 'Be careful with the machines, you only get one chance
+
+      You
+      can destroy them with a weapon or by disabling them by stepping on them
+
+      Good
+      luck'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2197030412886016
+    m_Localized: 'Congratulations on reaching the end of the prototype, I had some
+      implementation problems, so it didn''t turn out the way I wanted and I couldn''t
+      develop the entire story of the game, in fact it was just the beginning of
+      a plot, but if there is interest from those who played I would be happy to
+      continue the project until it is finished and left the way it was supposed
+      to be, unfortunately time is short and I am learning, thank you.
+
+'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

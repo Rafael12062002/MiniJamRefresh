@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 //Esse Script serve para silenciar todos os audios do jogo e mudar a cor da imagem
 //This script is used to mute all game audio and change the image color
-public class AudioListener : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public static AudioListener instance;
-    private AudioListener audioListener;
+    public static AudioManager instance;
+    
     public bool isMuted = false;
     public Image iconButton;
 
@@ -32,35 +32,30 @@ public class AudioListener : MonoBehaviour
 
     void Start()
     {
-        audioListener = FindObjectOfType<AudioListener>();
-
-        if (iconButton == null)
-        {
-            Debug.Log("Imagem não atribuida ao botão");
-            //Image not assigned to the button
-        }
+        UpdateAudioState();
     }
 
     //Evento de botão referenciado no inspector do botão de som
     //Button event referenced in the sound button inspector
     public void ToggleAudio()
     {
-        if (audioListener != null)
-        {
-            isMuted = !isMuted;
-            audioListener.isMuted = !isMuted;
-            Debug.Log("Som Mutado: " + isMuted);
-            //Sound Muted: " + isMuted
+        isMuted = !isMuted;
+        AudioListener.volume = isMuted ? 0f : 1f;
+        Debug.Log("Som Mutado: " + isMuted);
 
-            if (iconButton != null)
-            {
-                iconButton.color = isMuted ? muteColor : normalColor;
-            }
-        }
-        else
+        if (iconButton != null)
         {
-            Debug.LogError("AudioListener não encontrado!");
-            //AudioListener not found!
+            iconButton.color = isMuted ? muteColor : normalColor;
+        }
+    }
+
+    private void UpdateAudioState()
+    {
+        AudioListener.volume = isMuted ? 0f : 1f;
+
+        if (iconButton != null)
+        {
+            iconButton.color = isMuted ? muteColor : normalColor;
         }
     }
 }

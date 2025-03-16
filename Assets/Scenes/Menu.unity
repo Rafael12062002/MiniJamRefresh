@@ -2037,9 +2037,13 @@ MonoBehaviour:
   fecharPanelLoja: {fileID: 0}
   ingles: {fileID: 0}
   portugues: {fileID: 0}
+  fecharTutorial: {fileID: 0}
+  backMenu: {fileID: 0}
+  panelGameOver: {fileID: 0}
   panelConfig: {fileID: 0}
   panelOptions: {fileID: 0}
   panelLoja: {fileID: 0}
+  panelTutorial: {fileID: 0}
   url: https://paulo-rafael-c-r.itch.io/
 --- !u!1 &884840269
 GameObject:
@@ -3621,6 +3625,7 @@ MonoBehaviour:
   player: {fileID: 0}
   estatisticPlayer: {fileID: 0}
   canvas: {fileID: 0}
+  eventSystem: {fileID: 582233399}
 --- !u!1 &2008113176
 GameObject:
   m_ObjectHideFlags: 0

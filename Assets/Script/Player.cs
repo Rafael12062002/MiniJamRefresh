@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,7 +12,7 @@ public class Player : MonoBehaviour
     private bool tiro;
     public float forcaTiro;
     public bool tiroLiberado;
-
+    public bool isdead;
     public GameObject minhaArma;
 
     private void Awake()
@@ -22,6 +21,11 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
+        if (minhaArma == null && SceneManager.GetActiveScene().name == "FaseTorre")
+        {
+            minhaArma = GameObject.FindWithTag("Arma");
+        }
+        isdead = false;
         tiroLiberado = false;
     }
 
@@ -63,7 +67,7 @@ public class Player : MonoBehaviour
 
     void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
     {
-        if(minhaArma == null && scene.name == "FaseTorre")
+        if(minhaArma == null)
         {
             minhaArma = GameObject.FindWithTag("Arma");
         }
@@ -71,7 +75,11 @@ public class Player : MonoBehaviour
 
     public void Morte()
     {
-        Destroy(gameObject);
-        UiManager.instance.panelGameOver.SetActive(true);
+        isdead = true;
+        gameObject.SetActive(false);
+        if(isdead)
+        {
+            UiManager.instance.panelGameOver.SetActive(true);
+        }
     }
 }

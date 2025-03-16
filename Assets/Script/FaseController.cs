@@ -16,9 +16,13 @@ public class FaseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isTrigger && Input.GetKeyUp(KeyCode.F))
+        if(isTrigger && Input.GetKeyUp(KeyCode.E) && SceneManager.GetActiveScene().name == "FaseIntrodutoria")
         {
             SceneManager.LoadScene("FaseTorre");
+        }
+        if (isTrigger && Input.GetKeyUp(KeyCode.E) && SceneManager.GetActiveScene().name == "FaseTorre")
+        {
+            SceneManager.LoadScene("FimPrototipo");
         }
     }
 

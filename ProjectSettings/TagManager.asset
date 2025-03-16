@@ -17,6 +17,9 @@ TagManager:
   - Enemy
   - TutorialPanel
   - PanelGameOver
+  - DialoguePanel
+  - ButtonInteract
+  - CanvasPersistente
   layers:
   - Default
   - TransparentFX

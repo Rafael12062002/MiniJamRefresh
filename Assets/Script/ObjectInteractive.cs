@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ObjectInteractive : MonoBehaviour
 {
@@ -10,8 +11,15 @@ public class ObjectInteractive : MonoBehaviour
     public bool isTrigger = false;
     public AudioSource audioMaquina;
 
+    private void Awake()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
     void Start()
     {
+        audioMaquina = GameObject.Find("MaquinaHistory").GetComponent<AudioSource>();
+        objectInteractive = transform.Find("ButtonInteract")?.gameObject;
         dialogue = GetComponent<Dialogue>();
         objectInteractive.SetActive(false);
     }
@@ -25,6 +33,23 @@ public class ObjectInteractive : MonoBehaviour
             audioMaquina.Play();
         }
     }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(dialogue ==  null)
+        {
+            dialogue = GetComponent<Dialogue>();
+        }
+        if(objectInteractive ==  null)
+        {
+            objectInteractive = transform.Find("ButtonInteract")?.gameObject;
+        }
+        if(audioMaquina == null)
+        {
+            audioMaquina = GameObject.Find("MaquinaHistory").GetComponent<AudioSource>();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

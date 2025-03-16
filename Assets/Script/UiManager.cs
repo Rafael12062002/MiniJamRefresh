@@ -26,7 +26,7 @@ public class UiManager : MonoBehaviour
 
 
     public Button backMenu;
-    public Button playAgain;
+    //public Button playAgain;
 
     //panels Menu
     public GameObject panelGameOver;
@@ -35,6 +35,7 @@ public class UiManager : MonoBehaviour
     public GameObject panelLoja;
     public GameObject panelTutorial;
 
+    Player player;
     //Url Do portifolio
     public string url = "https://paulo-rafael-c-r.itch.io/";
     private bool isChanging = false;
@@ -68,7 +69,7 @@ public class UiManager : MonoBehaviour
 
     }
 
-    void AtualizarUI(string sceneName)
+    public void AtualizarUI(string sceneName)
     {
         if (sceneName == "Menu")
         {
@@ -104,18 +105,39 @@ public class UiManager : MonoBehaviour
             outrosJogos.onClick.AddListener(ButtonOutrosJogos);
             som.onClick.AddListener(RemoverSom); 
         }
-        if(sceneName == "FaseIntrodutoria")
+        if(sceneName == "FaseIntrodutoria" || sceneName == "FaseTorre")
         {
-            panelTutorial = GameObject.FindWithTag("TutorialPanel");
-            fecharTutorial = GameObject.Find("FecharT").GetComponent<Button>();
-            panelGameOver = GameObject.FindGameObjectWithTag("PanelGameOver");
-            backMenu = GameObject.Find("BackToMenu").GetComponent<Button>();
-            playAgain = GameObject.Find("TentarNovamente").GetComponent<Button>();
-            panelGameOver.SetActive(false);
+            Debug.Log("Tentando encontrar panel Game over");
+            if(player == null)
+            {
+                player = FindObjectOfType<Player>();
+            }
+            if(panelGameOver == null)
+            {
+                panelGameOver = GameObject.FindGameObjectWithTag("PanelGameOver");
+            }
+            if(panelTutorial == null)
+            {
+                panelTutorial = GameObject.FindWithTag("TutorialPanel");
+            }
+            if(fecharTutorial == null)
+            {
+                fecharTutorial = GameObject.Find("FecharT").GetComponent<Button>();
+            }
+            if(backMenu == null)
+            {
+                backMenu = GameObject.Find("BackToMenu").GetComponent<Button>();
+            }
+            if(panelGameOver !=  null)
+            {
+                panelGameOver.SetActive(false);
+            }
             fecharTutorial.onClick.AddListener(FecharTutorial);
-            backMenu.onClick.AddListener(BackToMenu);
-            playAgain.onClick.AddListener(PlayAgain);
+            backMenu.onClick.AddListener((BackToMenu));
         }
+        //panelGameOver.SetActive(false);
+        // Verifique a lógica do método
+        Debug.Log($"Atualizando UI para a cena {sceneName}");
     }
 
     void AbrirPanelConfig()
@@ -162,6 +184,7 @@ public class UiManager : MonoBehaviour
 
     void BackToMenu()
     {
+        Debug.Log("Apertado");
         SceneManager.LoadScene("Menu");
     }
 
@@ -177,7 +200,8 @@ public class UiManager : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("FaseTorre");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        player.gameObject.SetActive(true);
     }
 
     public void ChangeToEnglish()

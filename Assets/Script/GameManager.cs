@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     public MovePlayer player;
     public Player estatisticPlayer;
     public Canvas canvas;
+    public EventSystem eventSystem;
     private void Awake()
     {
         if(instance == null)
@@ -28,6 +30,10 @@ public class GameManager : MonoBehaviour
             {
                 DontDestroyOnLoad(canvas.gameObject);
             }
+            if(eventSystem != null)
+            {
+                DontDestroyOnLoad(eventSystem.gameObject);
+            }
         }
         else if (instance != this)
         {
@@ -37,7 +43,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-       
+        
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -48,7 +54,7 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log($"Cena carregada = {scene.name}");
-        if(scene.name == "Menu" ||  scene.name == "Intro")
+        if(scene.name == "Menu" ||  scene.name == "Intro" || scene.name == "FimPrototipo")
         {
             Destroy(player?.gameObject);
             Destroy(estatisticPlayer?.gameObject);
@@ -69,6 +75,16 @@ public class GameManager : MonoBehaviour
         {
             canvas = FindObjectOfType<Canvas>();
             if(canvas != null) DontDestroyOnLoad(canvas);
+        }
+        // Busca os painéis novamente
+        UiManager uiManager = FindObjectOfType<UiManager>();
+        if (uiManager != null)
+        {
+            uiManager.AtualizarUI(scene.name);
+        }
+        else
+        {
+            Debug.LogError("UiManager não encontrado na cena!");
         }
     }
 

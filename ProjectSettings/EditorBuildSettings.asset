@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FaseTorre.unity
     guid: 58ab60ed6beb8bc4d822cea16dcef31a
+  - enabled: 1
+    path: Assets/Scenes/FimPrototipo.unity
+    guid: 03fadafc5dfddfa419d9f22bb5fb5fee
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 52f13780a08aa594fa6223b8e4f1996f, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: cd489011c4579bc4faf5c011e7fcd1e9, type: 2}
